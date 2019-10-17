@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Random name generator for creating fictional characters.">
     <meta name="author" content="Coul Greer">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TTRPG Name Generator</title>
 </head>
+
 <body>
-    
+    <h1>Table Top RPG Random Name Generator</h1>
+    <div id="filter">
+        <h2>Filters:</h2>
+        <div id="filter-options">
+            <h3>Genres:</h3>
+            <select name="genre" id="genre">
+                <option value="any">ANY</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="development-of-the-industrial-us">The Development of the Industrial United States
+                    (1870-1900)</option>
+                <option value="emergence-of-modern-america">The Emergence of Modern America (1890-1930)</option>
+                <option value="great-depression-and-world-war-ii">The Great Depression and World War II (1929-1945)
+                </option>
+                <option value="contemporary-us">Contemporary United States (1968 to the present)</option>
+                <option value="cyberpunk">Cyberpunk</option>
+            </select>
+            <h3>Sex:</h3>
+            <select>
+                <option value="random">RANDOM</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+            </select>
+        </div>
+    </div>
+    <img src="imgs/roaring20s.png" alt="Picture of Emergence of Modern America">
+    <div id="generation-buttons">
+        <button>Generate Full Name</button>
+        <button>Generate First Name</button>
+        <button>Generate Surname</button>
+    </div>
+    <p id="name-display">First Last</p>
+    <button>Copy</button>
 </body>
+
 </html>
