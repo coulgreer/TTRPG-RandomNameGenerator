@@ -8,41 +8,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TTRPG Name Generator</title>
+
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <body>
     <h1>Table Top RPG Random Name Generator</h1>
-    <div id="filter">
-        <h2>Filters:</h2>
-        <div id="filter-options">
-            <h3>Genres:</h3>
-            <select name="genre" id="genre">
-                <option value="any">ANY</option>
-                <option value="fantasy">Fantasy</option>
-                <option value="development-of-the-industrial-us">The Development of the Industrial United States
-                    (1870-1900)</option>
-                <option value="emergence-of-modern-america">The Emergence of Modern America (1890-1930)</option>
-                <option value="great-depression-and-world-war-ii">The Great Depression and World War II (1929-1945)
-                </option>
-                <option value="contemporary-us">Contemporary United States (1968 to the present)</option>
-                <option value="cyberpunk">Cyberpunk</option>
-            </select>
-            <h3>Sex:</h3>
-            <select>
-                <option value="random">RANDOM</option>
-                <option value="female">Female</option>
-                <option value="male">Male</option>
-            </select>
+
+    <div class="row">
+        <div class="col-6">
+            <h2>Filters:</h2>
+            <div class="indented-container">
+                <div class="row grid-container">
+                    <h3 class="col-4">Genres:</h3>
+                    <select name="genre" id="genre" class="col-8">
+                        <option value="any">ANY</option>
+                        <option value="fantasy">Fantasy</option>
+                        <option value="development-of-the-industrial-us">The Development of the Industrial United States
+                            (1870-1900)</option>
+                        <option value="emergence-of-modern-america">The Emergence of Modern America (1890-1930)</option>
+                        <option value="great-depression-and-world-war-ii">The Great Depression and World War II
+                            (1929-1945)
+                        </option>
+                        <option value="contemporary-us">Contemporary United States (1968 to the present)</option>
+                        <option value="cyberpunk">Cyberpunk</option>
+                    </select>
+                    <h3 class="col-4">Sex:</h3>
+                    <select class="col-8">
+                        <option value="random">RANDOM</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <img class="col-6" src="imgs/roaring20s.png" alt="Picture of Emergence of Modern America">
+    </div>
+
+    <div class="row generator-container">
+        <div class="col-3 generator-options">
+            <ul>
+                <li><button>Generate Full Name</button></li>
+                <li><button>Generate First Name</button></li>
+                <li><button>Generate Surname</button></li>
+            </ul>
+        </div>
+        <p id="name-display" class="col-7">First Last</p>
+        <div class="col-2">
+            <button id="copy-button">Copy</button>
         </div>
     </div>
-    <img src="imgs/roaring20s.png" alt="Picture of Emergence of Modern America">
-    <div id="generation-buttons">
-        <button>Generate Full Name</button>
-        <button>Generate First Name</button>
-        <button>Generate Surname</button>
-    </div>
-    <p id="name-display">First Last</p>
-    <button>Copy</button>
 </body>
 
 </html>
