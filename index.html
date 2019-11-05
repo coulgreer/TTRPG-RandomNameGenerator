@@ -10,6 +10,7 @@
     <title>TTRPG Name Generator</title>
 
     <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -19,22 +20,16 @@
         <div class="col-6">
             <h2>Filters:</h2>
             <div class="indented-container">
-                <div class="row grid-container">
-                    <h3 class="col-4">Genres:</h3>
-                    <select name="genre" id="genre" class="col-8">
+                <div class="grid-container">
+                    <h3>Genres:</h3>
+                    <select id="genre-filter">
                         <option value="any">ANY</option>
-                        <option value="fantasy">Fantasy</option>
-                        <option value="development-of-the-industrial-us">The Development of the Industrial United States
-                            (1870-1900)</option>
-                        <option value="emergence-of-modern-america">The Emergence of Modern America (1890-1930)</option>
-                        <option value="great-depression-and-world-war-ii">The Great Depression and World War II
-                            (1929-1945)
-                        </option>
-                        <option value="contemporary-us">Contemporary United States (1968 to the present)</option>
-                        <option value="cyberpunk">Cyberpunk</option>
+                        <option value="progressive-us">Progressive U.S. (1900-1949)</option>
+                        <option value="mid-century-us">Mid-Century U.S. (1950-1999)</option>
+                        <option value="new-millennium-us">New Millennium U.S. (2000-2018)</option>
                     </select>
-                    <h3 class="col-4">Sex:</h3>
-                    <select class="col-8">
+                    <h3>Sex:</h3>
+                    <select id="sex-filter">
                         <option value="random">RANDOM</option>
                         <option value="female">Female</option>
                         <option value="male">Male</option>
@@ -48,7 +43,7 @@
     <div class="row generator-container">
         <div class="col-3 generator-options">
             <ul>
-                <li><button>Generate Full Name</button></li>
+                <li><button onclick="selectRandomFullName()">Generate Full Name</button></li>
                 <li><button>Generate First Name</button></li>
                 <li><button>Generate Surname</button></li>
             </ul>
