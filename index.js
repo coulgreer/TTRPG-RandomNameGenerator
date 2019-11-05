@@ -87,7 +87,6 @@ function selectRandomSex() {
 
 var firstName = selectedGenre.randomFemaleName;
 var surname = selectedGenre.randomSurname;
-var fullName = firstName + " " + surname;
 
 function selectRandomFirstName() {
     updateSelectedGenre();
@@ -124,18 +123,16 @@ function updateSelectedSex() {
 }
 
 function updateNameDisplay() {
-    document.getElementById("name-display").innerHTML = fullName;
+    document.getElementById("name-display").innerHTML = firstName + " " + surname;
 }
 
 function selectRandomSurname() {
     surname = selectedGenre.randomSurname;
+
     updateNameDisplay();
 }
 
 function selectRandomFullName() {
     selectRandomFirstName();
     selectRandomSurname();
-    fullName = firstName + " " + surname;
-
-    updateNameDisplay();
 }
