@@ -55,6 +55,7 @@ h1 {
     font: 20px arial, sans-serif;
     text-align: center;
     border: 2px solid black;
+    resize: none;
 }
 
 #copy-button {

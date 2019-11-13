@@ -37,7 +37,7 @@
                 </div>
             </div>
         </div>
-        <img class="col-6" src="imgs/roaring20s.png" alt="Picture of Emergence of Modern America">
+        <img class="col-6" src="imgs/a_logo.png" alt="Picture of A Super Cool Logo">
     </div>
 
     <div class="row generator-container">
@@ -48,9 +48,9 @@
                 <li><button onclick="selectRandomSurname()">Generate Surname</button></li>
             </ul>
         </div>
-        <p id="name-display" class="col-7">First Last</p>
+        <input type="text" id="name-display" class="col-7" value="First Last" readonly></input>
         <div class="col-2">
-            <button id="copy-button">Copy</button>
+            <button id="copy-button" onclick="copyFullNameToClipboard()">Copy</button>
         </div>
     </div>
 </body>

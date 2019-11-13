@@ -123,7 +123,7 @@ function updateSelectedSex() {
 }
 
 function updateNameDisplay() {
-    document.getElementById("name-display").innerHTML = firstName + " " + surname;
+    document.getElementById("name-display").value = firstName + " " + surname;
 }
 
 function selectRandomSurname() {
@@ -135,4 +135,13 @@ function selectRandomSurname() {
 function selectRandomFullName() {
     selectRandomFirstName();
     selectRandomSurname();
+}
+
+function copyFullNameToClipboard() {
+    var text = document.getElementById("name-display");
+    text.select();
+    text.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+
+    alert("Copied the text: '" + text.value + "'");
 }
