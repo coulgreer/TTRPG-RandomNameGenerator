@@ -1,14 +1,37 @@
 * {
     box-sizing: border-box;
+    font-family: "Verdana", "Arial";
+    color: #3f2518;
 }
 
 body {
-    max-width: 1200px;
+    max-width: 1024px;
     margin: auto;
+    background-color: #205991;
 }
 
 h1 {
     text-align: center;
+    color: #fbfcfc;
+    text-decoration: underline solid #f0b965;
+}
+
+button {
+    border: none;
+    text-align: center;
+    background-color: #5086af;
+    color: #3e251c;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #3e251c;
+    color: #5086af;
+}
+
+select {
+    background-color: #b2d6cf;
+    border: 3px solid #b64d45;
 }
 
 .row::after {
@@ -18,7 +41,7 @@ h1 {
 }
 
 .indented-container {
-    padding: 15px 0 15px 45px;
+    padding: 0 0 0 30px;
 }
 
 .indented-container h3 {
@@ -30,19 +53,27 @@ h1 {
     padding: 0 auto;
 }
 
+.grid-container {
+    padding: 3px;
+}
+
 .grid-container > * {
     width: 100%;
     padding: 15px;
 }
 
 .generator-container {
-    margin: 50px 0 0 0;
+    margin: 0;
 }
 
 .generator-container button {
     width: 100%;
     padding: 5px;
     margin: 3px 0;
+}
+
+.filters {
+    border: 3px solid #f0b865;
 }
 
 .generator-options ul {
@@ -134,8 +165,4 @@ h1 {
     .col-12 {
         width: 100%;
     }
-}
-
-@media only screen and (min-width: 992px) {
-
 }
